@@ -137,6 +137,9 @@ exclude:
   - tmp
   - /docs # ignore Minimal Mistakes /docs
   - /test # ignore Minimal Mistakes /test
+  - config.ru
+  - Procfile
+  - Rakefile
 keep_files:
   - .git
   - .svn
@@ -184,6 +187,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - kramdown
 
 # mimic GitHub Pages with --safe
 whitelist:

@@ -30,6 +30,12 @@ def listen_handler(base, options)
   end
 end
 
+namespace :assets do
+  task :precompile do
+    puts `bundle exec jekyll build`
+  end
+end
+
 task :preview do
   base = Pathname.new('.').expand_path
   options = {
